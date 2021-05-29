@@ -1,0 +1,22 @@
+{
+  "name": "pmodel",
+  "description": "",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pwright/pmodel.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pwright/pmodel/issues"
+  },
+  "homepage": "https://github.com/pwright/pmodel#readme",
+  "dependencies": {
+    "simple-text-parser": "^2.1.1"
+  }
+}
