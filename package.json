@@ -1,6 +1,6 @@
 {
   "name": "pmodel",
-  "description": "",
+  "description": "Query adoc files for structure",
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
@@ -10,8 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/pwright/pmodel.git"
   },
-  "author": "",
+  "author": "pwright",
   "license": "MIT",
+  "bin": {
+    "pmodel": "./index.js"
+  },
   "bugs": {
     "url": "https://github.com/pwright/pmodel/issues"
   },

@@ -1,0 +1,8 @@
+[id='analysing_{context}']
+
+= Analysing AsciiDoc using `pmodel`
+
+`pmodel` runs against `adoc` files and produces reports.
+
+== Second level headings are ignored
+
