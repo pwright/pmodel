@@ -1,0 +1,49 @@
+= rhoas kafka topic update
+
+[role="_abstract"]
+ifdef::env-github,env-browser[:relfilesuffix: .adoc]
+
+Update a Kafka topic
+
+[discrete]
+== Synopsis
+
+Update a topic in the current Apache Kafka instance.
+
+
+....
+rhoas kafka topic update [flags]
+....
+
+[discrete]
+== Examples
+
+....
+# update the number of replicas for a topic
+$ rhoas kafka topic update topic-1 --replication-factor 
+
+....
+
+[discrete]
+== Options
+
+`-o, --output _string_`::
+Format in which to display the Kafka topic. Choose from: "json", "yml", "yaml" (default "json")
+`--retention-bytes _string_`::
+The maximum total size of a partition log segments before old log segments are deleted to free up space
+`--retention-ms _string_`::
+The period of time in milliseconds the broker will retain a partition log before deleting it
+
+[discrete]
+== Options inherited from parent commands
+
+`-d, --debug`::
+Enable debug mode
+`-h, --help`::
+Show help for a command
+
+[discrete]
+== See also
+
+* xref:_rhoas_kafka_topic[rhoas kafka topic] - Create, describe, update, list and delete topics
+

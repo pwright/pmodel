@@ -1,0 +1,21 @@
+site:
+  title: PREVIEW
+  # the 404 page and sitemap files only get generated when the url property is set
+  url: https://localhost:8080
+  # start_page: preview::index.adoc
+content:
+  sources:
+  - url: ./
+    branches: HEAD
+    start_path: antora
+
+ui:
+  bundle:
+    url: https://github.com/skupperproject/skupper-docs/raw/main/ui-preview-bundle.zip
+    snapshot: true
+
+asciidoc:
+  attributes:
+    plantuml-server-url: 'http://www.plantuml.com/plantuml'
+    plantuml-fetch-diagram: true
+    mod-loc: ROOT:partial$

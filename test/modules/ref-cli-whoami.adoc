@@ -1,0 +1,41 @@
+= rhoas whoami
+
+[role="_abstract"]
+ifdef::env-github,env-browser[:relfilesuffix: .adoc]
+
+Print current username
+
+[discrete]
+== Synopsis
+
+Print the username of the currently active user.
+
+This command prints the username associated with the user currently logged in.
+
+
+....
+rhoas whoami [flags]
+....
+
+[discrete]
+== Examples
+
+....
+# print current username
+$ rhoas whoami
+
+....
+
+[discrete]
+== Options inherited from parent commands
+
+`-d, --debug`::
+Enable debug mode
+`-h, --help`::
+Show help for a command
+
+[discrete]
+== See also
+
+* xref:_rhoas[rhoas] - RHOAS CLI
+

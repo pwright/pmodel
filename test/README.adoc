@@ -1,0 +1,6 @@
+= Red Hat OpenShift Streams for Apache Kafka Docs
+
+This repository contains the documentation for Red Hat OpenShift Streams for Apache Kafka.
+
+Contributor guidelines are available here:
+https://docs.google.com/document/d/15RyOEJHEx4kyPCiNzQQDvHbHXhe7PbK2lmvwX-N0_yo/edit?usp=sharing

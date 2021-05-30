@@ -1,0 +1,30 @@
+= rhoas kafka topic
+
+[role="_abstract"]
+ifdef::env-github,env-browser[:relfilesuffix: .adoc]
+
+Create, describe, update, list and delete topics
+
+[discrete]
+== Synopsis
+
+Create, describe, update, list and delete topics for the current Kafka instance.
+
+[discrete]
+== Options inherited from parent commands
+
+`-d, --debug`::
+Enable debug mode
+`-h, --help`::
+Show help for a command
+
+[discrete]
+== See also
+
+* xref:_rhoas_kafka[rhoas kafka] - Create, view, use, and manage your Apache Kafka instances
+* xref:_rhoas_kafka_topic_create[rhoas kafka topic create] - Create a topic
+* xref:_rhoas_kafka_topic_delete[rhoas kafka topic delete] - Delete a topic
+* xref:_rhoas_kafka_topic_describe[rhoas kafka topic describe] - Describe a topic
+* xref:_rhoas_kafka_topic_list[rhoas kafka topic list] - List all topics
+* xref:_rhoas_kafka_topic_update[rhoas kafka topic update] - Update a Kafka topic
+

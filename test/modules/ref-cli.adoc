@@ -1,0 +1,51 @@
+= rhoas
+
+
+[role="_abstract"]
+ifdef::env-github,env-browser[:relfilesuffix: .adoc]
+
+RHOAS CLI
+
+[discrete]
+== Synopsis
+
+Manage your application services directly from the command line.
+
+[discrete]
+== Examples
+
+....
+# authenticate securely through your web browser
+$ rhoas login
+
+# create a Kafka instance
+$ rhoas kafka create my-kafka-cluster
+
+# create a service account and save credentials to a JSON file
+$ rhoas serviceaccount create -o json
+
+# connect your Kubernetes/OpenShift cluster to a service
+$ rhoas cluster connect
+
+....
+
+[discrete]
+== Options
+
+`-d, --debug`::
+Enable debug mode
+`-h, --help`::
+Show help for a command
+
+[discrete]
+== See also
+
+* xref:_rhoas_cluster[rhoas cluster] - View and perform operations on your Kubernetes or OpenShift cluster
+* xref:_rhoas_completion[rhoas completion] - Outputs command completion for the given shell (bash, zsh, or fish)
+* xref:_rhoas_kafka[rhoas kafka] - Create, view, use, and manage your Apache Kafka instances
+* xref:_rhoas_login[rhoas login] - Log in to RHOAS
+* xref:_rhoas_logout[rhoas logout] - Log out from RHOAS
+* xref:_rhoas_serviceaccount[rhoas serviceaccount] - Create, list, describe, delete and update service accounts
+* xref:_rhoas_status[rhoas status] - View the status of all currently used services
+* xref:_rhoas_whoami[rhoas whoami] - Print current username
+

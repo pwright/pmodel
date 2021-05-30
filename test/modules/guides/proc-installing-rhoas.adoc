@@ -1,0 +1,167 @@
+[id='proc-installing-rhoas_{context}']
+= Installing the rhoas CLI
+:imagesdir: ../_images
+
+[role="_abstract"]
+You can install `rhoas` on Linux, macOS, or Windows.
+
+NOTE: The `rhoas` link:https://github.com/redhat-developer/app-services-cli/releases[Releases page^] lists the bug fixes and new features for every `rhoas` release.
+
+== Installing the rhoas CLI on Linux
+
+If you are using Linux, you can install `rhoas` by either using the installation script, or the RPM.
+
+=== Installation script
+
+.Procedure
+
+. Review the https://github.com/redhat-developer/app-services-cli/blob/main/scripts/install.sh[`install.sh` installation script^].
+
+. Run the `install.sh` script:
++
+--
+[source,shell]
+----
+$ curl -o- https://raw.githubusercontent.com/redhat-developer/app-services-cli/main/scripts/install.sh | bash
+----
+
+[NOTE]
+====
+You can use the `-s` argument to install a specific version of the `rhoas` CLI. For example, this command installs version `0.24.3`:
+
+[source,shell]
+----
+$ curl -o- https://raw.githubusercontent.com/redhat-developer/app-services-cli/main/scripts/install.sh | bash -s 0.24.3
+----
+====
+
+The `rhoas` CLI is installed in `$HOME/.local/bin`.
+--
+
+. Verify that the `rhoas` installation directory is on your `$PATH`.
++
+--
+To check your `$PATH`, run the following command:
+
+[source,shell]
+----
+$ echo $PATH
+----
+--
+
+. Check the `rhoas` version to verify that the CLI is installed.
++
+--
+This example shows that `rhoas` 0.24.3 is installed:
+
+[source,shell]
+----
+$ rhoas --version
+rhoas version 0.24.3
+----
+--
+
+=== RPM installation
+
+You can install `rhoas` as an RPM if you are using Red Hat Enterprise Linux (RHEL), Fedora, or CentOS.
+
+.Procedure
+
+. Navigate to the `rhoas` link:https://github.com/redhat-developer/app-services-cli/releases[Releases page^] and choose the version that you'd like to download.
+
+. Use `dnf`/`yum` to install the desired version of `rhoas`:
++
+--
+This example installs `rhoas` version `0.24.3`:
+
+[source,shell]
+----
+$ sudo dnf install -y https://github.com/redhat-developer/app-services-cli/releases/download/0.24.3/rhoas_0.24.3_linux_amd64.rpm
+----
+--
+
+. Check the `rhoas` version to verify that the CLI is installed.
++
+--
+This example shows that `rhoas` 0.24.3 is installed:
+
+[source,shell]
+----
+$ rhoas --version
+rhoas version 0.24.3
+----
+--
+
+== Installing the rhoas CLI on macOS
+
+.Procedure
+
+. Review the link:https://github.com/redhat-developer/app-services-cli/blob/main/scripts/install.sh[`install.sh` installation script^].
+
+. Run the `install.sh` script:
++
+--
+[source,shell]
+----
+$ curl -o- https://raw.githubusercontent.com/redhat-developer/app-services-cli/main/scripts/install.sh | bash
+----
+
+[NOTE]
+====
+You can use the `-s` argument to install a specific version of the `rhoas` CLI. For example, this command installs version `0.24.3`:
+
+[source,shell]
+----
+$ curl -o- https://raw.githubusercontent.com/redhat-developer/app-services-cli/main/scripts/install.sh | bash -s 0.24.3
+----
+====
+
+The `rhoas` CLI is installed in `$HOME/bin`.
+--
+
+. Verify that the `rhoas` installation directory is on your `$PATH`.
++
+--
+To check your `$PATH`, run the following command:
+
+[source,shell]
+----
+$ echo $PATH
+----
+--
+
+. Check the `rhoas` version to verify that the CLI is installed.
++
+--
+This example shows that `rhoas` 0.24.3 is installed:
+
+[source,shell]
+----
+$ rhoas --version
+rhoas version 0.24.3
+----
+--
+
+== Installing the rhoas CLI on Windows
+
+.Procedure
+
+. Navigate to the `rhoas` link:https://github.com/redhat-developer/app-services-cli/releases[Releases page^].
+
+. Download the latest `rhoas` .zip file.
+
+. On your computer, create a `C:\rhoas` folder.
+
+. Extract the `rhoas.exe` file from the .zip file that you downloaded.
+
+. Move the `rhoas.exe` file to `C:\rhoas`.
+
+. If you are using Windows 10, set the `PATH` variable.
+
+.. Click *Search* and type `env` or `environment`.
+
+.. Select *Edit environment variables for your account*.
+
+.. In the *Variable* section, select *Path*, and click *Edit*.
+
+.. Click *New*, and enter `C:\rhoas`.

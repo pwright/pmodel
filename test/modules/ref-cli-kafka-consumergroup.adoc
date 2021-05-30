@@ -1,0 +1,28 @@
+= rhoas kafka consumergroup
+
+[role="_abstract"]
+ifdef::env-github,env-browser[:relfilesuffix: .adoc]
+
+Describe, list, and delete consumer groups for the current Kafka instance.
+
+[discrete]
+== Synopsis
+
+Use these commands to describe, list, and delete consumer groups for the current Kafka instance.
+
+[discrete]
+== Options inherited from parent commands
+
+`-d, --debug`::
+Enable debug mode
+`-h, --help`::
+Show help for a command
+
+[discrete]
+== See also
+
+* xref:_rhoas_kafka[rhoas kafka] - Create, view, use, and manage your Apache Kafka instances
+* xref:_rhoas_kafka_consumergroup_delete[rhoas kafka consumergroup delete] - Delete a consumer group
+* xref:_rhoas_kafka_consumergroup_describe[rhoas kafka consumergroup describe] - Describe a consumer group
+* xref:_rhoas_kafka_consumergroup_list[rhoas kafka consumergroup list] - List all consumer groups
+

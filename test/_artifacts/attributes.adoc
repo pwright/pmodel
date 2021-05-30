@@ -1,0 +1,20 @@
+:org-name: Red Hat
+:product-long: {org-name} OpenShift Streams for Apache Kafka
+:product: OpenShift Streams for Apache Kafka
+:product-version: 1
+//:product-version-previous: 0.0
+
+:service-url: https://cloud.redhat.com/beta/application-services/streams/
+
+:property-file-name: app-services.properties
+:samples-git-repo: https://github.com/redhat-developer/app-services-guides
+
+:ocm-name: {org-name} OpenShift Cluster Manager
+:ocm-name-short: OpenShift Cluster Manager
+
+:osd-name: {org-name} OpenShift Dedicated
+:osd-name-short: OpenShift Dedicated
+:osd-version: 4
+:osd-docs: https://docs.openshift.com/dedicated/4/welcome/index.html
+
+:rhoas-module: modules/cli
