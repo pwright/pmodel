@@ -2,7 +2,53 @@
 
 = Analysing AsciiDoc using `pmodel`
 
+[role="_abstract"]
 `pmodel` runs against `adoc` files and produces reports.
 
-== Second level headings are ignored
+To install pmodel:
+
+`npm i -g @techwriter/pmodel`
+
+To test an adoc file:
+
+`pmodel <adoc-file>`
+
+Example output shows that all elements exist:
+
+```
+{
+"filename":"README.adoc",
+"ID":"analysing_{context}", 
+"heading":"Analysing AsciiDoc using `pmodel`", 
+"abstract":"`pmodel` runs against `adoc` files and produces reports.", 
+"dummy":0}
+```
+
+To test a directory:
+
+```
+cd <dir>
+pmodel parse
+```
+
+The `parse` keyword triggers pmodel to recursively search for AsciiDoc files and run the test, output can be queried with link:https://alasql-wiki.readthedocs.io/en/latest/index.html[alasql].
+
+```
+pmodel parse > test.json
+
+alasql 'select heading, abstract from JSON("test.json") where abstract is not null'
+```
+
+
+== Tests
+
+The following tests are performed:
+
+* Capture Level 1 heading. If there are two level 1 headings, both are captured.
+* Capture first line after `[role="_ abstract"]`
+* Capture id value
+
+
+
+
 
