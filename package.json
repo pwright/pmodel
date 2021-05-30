@@ -1,5 +1,5 @@
 {
-  "name": "pmodel",
+  "name": "@techwriter/pmodel",
   "description": "Query adoc files for structure",
   "version": "0.0.1",
   "main": "index.js",
